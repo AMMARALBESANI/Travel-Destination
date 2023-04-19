@@ -1,13 +1,14 @@
-import data from '../../data/db.json'
 
-function Tours(){
+
+function Tours(props){
     return (<main>
        {
-         data.map((location)=>{
+         props.data.map((location)=>{
             return(
                 <div key={location.id}>
-                  <img src={location.image} />
+                  <img src={location.image} alt="photo1" />
                   <p>{location.name}</p>
+                  <hr/>
                 </div>
             )
          })

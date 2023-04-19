@@ -1,10 +1,12 @@
 import Header from "../header/Header"
 import Tours from "../tours/Tours"
+import Footer from "../footer/Footer"
 
-function Home (){
+function Home (props){
 return <>
   <Header/>
-  <Tours/>
+  <Tours data={props.data} />
+  <Footer/>
 </>
 }
 
